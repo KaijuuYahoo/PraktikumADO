@@ -115,7 +115,7 @@ namespace PraktikumADO
             {
                 Koneksi();
                 conn.Open();
-                string query = "UPDATE MataKuliah SET SKS=4 WHERE KodeMK = 'IF210101'";
+                string query = "UPDATE MataKuliah SET SKS=4 WHERE KodeMK = 'IF20101'";
                 cmd = new SqlCommand(query, conn);
                 int hasil = cmd.ExecuteNonQuery();
                 MessageBox.Show("Jumlah Baris Terpengaruh : " + hasil);

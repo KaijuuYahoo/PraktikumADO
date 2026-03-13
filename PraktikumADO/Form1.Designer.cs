@@ -123,7 +123,7 @@
             this.button5.TabIndex = 8;
             this.button5.Text = "Insert";
             this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.button5.Click += new System.EventHandler(this.btnInsert_Click);
             // 
             // button6
             // 
@@ -133,6 +133,7 @@
             this.button6.TabIndex = 9;
             this.button6.Text = "UpdateNew";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.btnUpdateNew_Click);
             // 
             // Form1
             // 

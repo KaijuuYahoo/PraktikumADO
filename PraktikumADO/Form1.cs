@@ -109,9 +109,23 @@ namespace PraktikumADO
             }
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void btnUpdateNew_Click(object sender, EventArgs e)
         {
-
+            try
+            {
+                Koneksi();
+                conn.Open();
+                string query = "UPDATE MataKuliah SET SKS=4 WHERE KodeMK = 'IF210101'";
+                cmd = new SqlCommand(query, conn);
+                int hasil = cmd.ExecuteNonQuery();
+                MessageBox.Show("Jumlah Baris Terpengaruh : " + hasil);
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
+
     }
 }

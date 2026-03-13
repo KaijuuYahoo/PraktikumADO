@@ -15,7 +15,7 @@ namespace PraktikumADO
         private void Koneksi()
         {
             conn = new SqlConnection(
-                "Data Source = DESKTOP - C6LEFON\\KAIJUURUN; Initial Catalog = DBAkademikADO; Integrated Security = True"
+                "Data Source = DESKTOP-C6LEFON\\KAIJUURUN; Initial Catalog = DBAkademikADO; Integrated Security = True"
                 );
         }
 

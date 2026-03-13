@@ -46,7 +46,6 @@ namespace PraktikumADO
                 cmd = new SqlCommand(query, conn);
                 int Jumlah = (int)cmd.ExecuteScalar();
                 txtHasil.Text = Jumlah.ToString();
-                MessageBox.Show("Koneksi ke Database Berhasil");
                 conn.Close();
             }
             catch (Exception ex)
@@ -66,7 +65,6 @@ namespace PraktikumADO
                 cmd = new SqlCommand(query, conn);
                 int Jumlah = (int)cmd.ExecuteScalar();
                 txtHasil.Text = Jumlah.ToString();
-                MessageBox.Show("Koneksi ke Database Berhasil");
                 conn.Close();
             }
             catch (Exception ex)
@@ -105,7 +103,6 @@ namespace PraktikumADO
                 cmd = new SqlCommand(query, conn);
                 int Jumlah = (int)cmd.ExecuteScalar();
                 txtHasil.Text = Jumlah.ToString();
-                MessageBox.Show("Koneksi ke Database Berhasil");
                 conn.Close();
             }
             catch (Exception ex)
